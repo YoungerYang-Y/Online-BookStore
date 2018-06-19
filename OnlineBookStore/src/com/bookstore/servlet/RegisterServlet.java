@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import com.bookstore.bean.User;
-import com.bookstore.dao.RegisterDao;
+import com.bookstore.dao.Register_Dao;
 
 
 
@@ -47,7 +47,7 @@ public class RegisterServlet extends HttpServlet {
 		pu.setPIN(PIN);
 		pu.setIdcard(idcard);
 		pu.setSex(sex);
-		RegisterDao dao = new RegisterDao();
+		Register_Dao dao = new Register_Dao();
 
 		if(dao.judge(id)){
 			if(dao.insert(pu)){

@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import com.bookstore.bean.User;
 import com.bookstore.util.DataMySQL;
 
-public class RegisterDao {
+public class Register_Dao {
 	public boolean judge(String id){
 		Connection con = DataMySQL.getConnection();
 		PreparedStatement pst = null;
